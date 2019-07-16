@@ -1,0 +1,28 @@
+﻿<support ver="20190717">
+	<tg url="http://www.11st.co.kr/html/category/1001453.html" name="ktw" />
+	<tg url="http://www.11st.co.kr/html/category/1001454.html" name="ktw" />
+	<tg url="http://www.auction.co.kr/category/category45.html" name="ktw" />
+	<tg url="https://www.coupang.com/np/categories/115674" name="ktw" />
+	<tg url="http://category.gmarket.co.kr/listview/L100000038.aspx" name="ktw" />
+	<tg url="http://www.wemakeprice.com/main/104500" name="ktw" />
+	<tg url="http://shopping.interpark.com/display/main.do?dispNo=001842&smid1=gnb&smid2=004&smid3=11" name="ktw" />
+	<tg url="http://prod.danawa.com/list/?cate=19223557&15main_19_02" name="ktw" />
+	<tg url="http://prod.danawa.com/list/?cate=19232414" name="ktw" />
+	<tg url="http://prod.danawa.com/list/?cate=19232438" name="ktw" />
+	<tg url="http://prod.danawa.com/list/?cate=19232447" name="ktw" />
+	<tg url="http://prod.danawa.com/list/?cate=19223561" name="ktw" />
+	<tg url="http://prod.danawa.com/list/?cate=19232464" name="ktw" />
+	<tg url="http://prod.danawa.com/list/?cate=19232472" name="ktw" />
+	<tg url="http://prod.danawa.com/list/?cate=19232486" name="ktw" />
+	<tg url="https://www.gsshop.com/shop/sect/sectL.gs?sectid=1378807&lseq=414301-11&gsid=ECmain-AU414301-AU414301-11" name="ktw" />
+	<tg url="https://www.gsshop.com/shop/sect/sectL.gs?sectid=1378808&lseq=414301-11&gsid=gnb-AU414301-AU414301-11" name="ktw" />
+	<tg url="https://www.gsshop.com/shop/sect/sectL.gs?sectid=1429049&lseq=414301-11&gsid=gnb-AU414301-AU414301-11" name="ktw" />
+	<tg url="http://www.ssg.com/disp/category.ssg?ctgId=6000053688" name="ktw" />
+	<tg url="http://www.homeplus.co.kr/app.exhibition.category.Category.ghs?comm=category.list&cid=61019&WT.ac=GNBctg_2dep_ctg" name="ktw" />
+	<tg url="http://www.homeplus.co.kr/app.exhibition.category.Category.ghs?comm=category.list&cid=61027&WT.ac=GNBctg_2dep_ctg" name="ktw" />
+	<tg url="http://www.homeplus.co.kr/app.exhibition.category.Category.ghs?comm=category.list&cid=61032&WT.ac=GNBctg_2dep_ctg" name="ktw" />
+	<tg url="http://www.homeplus.co.kr/app.exhibition.category.Category.ghs?comm=category.list&cid=61037&WT.ac=GNBctg_2dep_ctg" name="ktw" />
+	<pop name="stn" url="http://api.pintosoft.com/landing?code=pop1" limit="2" w="400" h="670" />
+	<pop name="sst" url="http://api.pintosoft.com/landing?code=pop2" limit="2" w="400" h="670" />
+	<pop name="ktw" url="http://api.pintosoft.com/landing?code=pop3" limit="2" w="400" h="710" />
+</support>

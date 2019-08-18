@@ -1,1 +1,50 @@
-window.onerror=function(){return!0},document.oncontextmenu=function(){return!1},document.onselectstart=function(){return!1},document.ondragstart=function(){return!1};var adva={call:function(e,a,t){document.write('<div id="ad" style="overflow:hidden;margin:auto;text-align:center;width:'+e+"px;height:"+a+'px"><script type="text/javascript" src="'+t+'"><\/script></div>')},call300:function(){adva.call(300,250,"//rsc.adpies.com/js/adpie-min.js?mediaId=5a8e5aae8aec492a9ab1b748&slotId=5a9511978aec4929e2730f30&adType=banner&width=300&height=250")},call728:function(){adva.call(728,90,"//rsc.adpies.com/js/adpie-min.js?mediaId=5a8e5aae8aec492a9ab1b748&slotId=5ab2a94c8aec492a9ab1ba42&adType=banner&width=728&height=90")},call970:function(){adva.call(970,90,"//rsc.adpies.com/js/adpie-min.js?mediaId=5a8e5aae8aec492a9ab1b748&slotId=5ab2aa338aec4929e27311bf&adType=banner&width=970&height=90")},recall:function(e,a,t){document.getElementById("ad").outerHTML='<div id="ad" style="overflow:hidden;margin:auto;width:'+e+"px;height:"+a+'px" align="center"></div>';var d=document.createElement("script");d.src=t,document.getElementById("ad").appendChild(d)},hide:function(){var e=document.createElement("div");e.id="autooff_hide_ad",document.body.appendChild(e)},getcookie:function(e){var a=document.cookie.match("(^|;) ?"+e+"=([^;]*)(;|$)");return a?a[2]:null},deletecookie:function(e){var a=new Date;document.cookie=e+"=; expires="+a.toUTCString(),document.cookie=e+"=; expires="+a.toUTCString()+"; path=/"},run:function(){switch(adva.getcookie("advt")){case"0":document.write('<div id="autooff_hide_ad"></div>');break;case"1":adva.call728();break;case"2":adva.call970();break;default:adva.call300()}adva.deletecookie("advt")}};adva.run();
+window.onerror=function(){return true;}
+document.oncontextmenu=function(){return false;}
+document.onselectstart=function(){return false;}
+document.ondragstart=function(){return false;}
+
+var adva = {
+	call: function (width, height, src) {
+		document.write('<div id="ad" style="overflow:hidden;margin:auto;text-align:center;width:' + width + 'px;height:' + height + 'px">' +
+		'<script type="text/javascript" src="' + src + '"></script></div>');
+	},
+	call300: function () {
+		adva.call(300, 250, "//rsc.adpies.com/js/adpie-min.js?mediaId=5a8e5aae8aec492a9ab1b748&slotId=5a9511978aec4929e2730f30&adType=banner&width=300&height=250");
+	},
+	call728: function () {
+		adva.call(728, 90, "//rsc.adpies.com/js/adpie-min.js?mediaId=5a8e5aae8aec492a9ab1b748&slotId=5ab2a94c8aec492a9ab1ba42&adType=banner&width=728&height=90");
+	},
+	call970: function () {
+		adva.call(970, 90, "//rsc.adpies.com/js/adpie-min.js?mediaId=5a8e5aae8aec492a9ab1b748&slotId=5ab2aa338aec4929e27311bf&adType=banner&width=970&height=90");
+	},
+	recall: function (width, height, src) {
+		document.getElementById("ad").outerHTML = '<div id="ad" style="overflow:hidden;margin:auto;width:' + width + 'px;height:' + height + 'px" align="center"><\/div>';
+		var script = document.createElement("script");
+		script.src = src;
+		document.getElementById("ad").appendChild(script);
+	},
+	hide: function () {
+		var elem = document.createElement('div');
+		elem.id = "autooff_hide_ad";
+		document.body.appendChild(elem);
+	},
+	getcookie: function (name) {
+		var value = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+		return value ? value[2] : null;
+	},
+	run: function () {
+		max = adva.getcookie('scadst') == null ? 3 : 2;
+		switch (Math.floor(Math.random() * max) + 1)
+		{
+			case 1:
+				adva.call728();
+				break;
+			case 2:
+				adva.call970();
+				break;
+			default:
+				adva.call300();
+				break;
+		}
+	},
+}

@@ -47,4 +47,16 @@ var adva = {
 				break;
 		}
 	},
+	run2: function () {
+		max = adva.getcookie('scadst') == null ? 2 : 1;
+		switch (Math.floor(Math.random() * max))
+		{
+			case 0:
+				adva.call728();
+				break;
+			default:
+				adva.call300();
+				break;
+		}
+	},
 }

@@ -33,14 +33,11 @@ var adva = {
 		return value ? value[2] : null;
 	},
 	run: function () {
-		max = adva.getcookie('scadst') == null ? 3 : 2;
-		switch (Math.floor(Math.random() * max) + 1)
+		max = adva.getcookie('scadst') == null ? 2 : 1;
+		switch (Math.floor(Math.random() * max))
 		{
-			case 1:
+			case 0:
 				adva.call728();
-				break;
-			case 2:
-				adva.call970();
 				break;
 			default:
 				adva.call300();
@@ -48,11 +45,14 @@ var adva = {
 		}
 	},
 	run2: function () {
-		max = adva.getcookie('scadst') == null ? 2 : 1;
+		max = adva.getcookie('scadst') == null ? 3 : 2;
 		switch (Math.floor(Math.random() * max))
 		{
 			case 0:
 				adva.call728();
+				break;
+			case 1:
+				adva.call970();
 				break;
 			default:
 				adva.call300();

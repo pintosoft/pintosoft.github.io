@@ -106,7 +106,7 @@ document.write('<div id="sc_as" style="position:relative;overflow:hidden;text-al
 '<div id="tbar">' +
 '<div class="asbt" style="position:absolute;right:2px;bottom:2px;" onclick="toast.close(); return false;"><div class="asbimg"></div></div>' +
 '</div>' + 
-'<iframe src="http://www.starcodec.com/ads/adzip.html?v=2019071101" width="300" height="250" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"></iframe>' + 
+'<iframe src="/ads/adzip.html?v=2019071101" width="300" height="250" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"></iframe>' + 
 '<div class="asb" id="asbin" style="position:absolute;right:2px;top:18px;" onclick="toast.close(); return false;"><div class="asbimg"></div></div>' +
 '<div class="asb" id="ainfo" style="position:absolute;right:2px;bottom:2px;height:10px;" onclick="toast.openInfo(); return false"><div id="aitext">Ad by StarCodec</div><div id="aiimg"></div></div>' +
 '</div>');

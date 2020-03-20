@@ -1,0 +1,6 @@
+<support ver="버전" dftg="기본 타겟 사용(true, 1, false, 0, 기본값 true)" dfstop="기본 스톱 사용(true, 1, false, 0, 기본값 true)">
+	<tg url="타겟 주소(도메인 가능)" name="대상 팝업 이름" p1="파라미터 1" p2="파라미터 2" p3="파라미터 3" style="팝업 스타일(기본값 normal, under, close, uoc(under or close))"/>
+	<pop name="팝업 이름" url="팝업 주소($1=파라미터 1, $2=파라미터 2, $3=파라미터 3), 없으면 팝업 사용 안 함" limit="노출 횟수(기본값 2)" w="팝업 폭(기본값 400)" h="팝업 높이(기본값 500)"
+		x="팝업 위치 x(음수는 화면폭 - x + 1, 기본값 -1)" y="팝업 위치 y(음수는 화면 높이 - y + 1, 기본값 0)" />
+	<stop url="도메인 주소" />
+</support>

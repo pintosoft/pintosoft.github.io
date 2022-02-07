@@ -4,18 +4,15 @@ document.onselectstart=function(){return false;}
 document.ondragstart=function(){return false;}
 
 var adva = {
-	call: function (width, height, src) {
+	call: function (width, height, html) {
 		document.write('<div id="ad" style="overflow:hidden;margin:auto;text-align:center;width:' + width + 'px;height:' + height + 'px">' +
-		'<script type="text/javascript" src="' + src + '"></script></div>');
+		html + '</div>');
 	},
-	call300: function () {
-		adva.call(300, 250, "//rsc.adpies.com/js/adpie-min.js?mediaId=5a8e5aae8aec492a9ab1b748&slotId=5a9511978aec4929e2730f30&adType=banner&width=300&height=250");
+	call518: function () {
+		adva.call(518, 200, '<script src="https://ads-partners.coupang.com/g.js"></script><script>new PartnersCoupang.G({"id":556083,"template":"carousel","trackingCode":"AF4463963","width":"518","height":"200"});</script>');
 	},
 	call728: function () {
-		adva.call(728, 90, "//rsc.adpies.com/js/adpie-min.js?mediaId=5a8e5aae8aec492a9ab1b748&slotId=5ab2a94c8aec492a9ab1ba42&adType=banner&width=728&height=90");
-	},
-	call970: function () {
-		adva.call(970, 90, "//rsc.adpies.com/js/adpie-min.js?mediaId=5a8e5aae8aec492a9ab1b748&slotId=5ab2aa338aec4929e27311bf&adType=banner&width=970&height=90");
+		adva.call(728, 90, '<iframe scrolling="no" src="https://minishop.linkprice.com/productbox_realhotdeal.php?affiliate_id=A100513530&category=MD%E2%80%99S%20PICK%7C%ED%8C%A8%EC%85%98%C2%B7%EB%B7%B0%ED%8B%B0%7C%EA%B0%80%EC%A0%84%C2%B7%EB%94%94%EC%A7%80%ED%84%B8%7C%EC%8B%9D%ED%92%88%C2%B7%EC%83%9D%ED%99%9C%C2%B7%EC%9C%A0%EC%95%84%EB%8F%99%7C%EC%97%AC%ED%96%89%C2%B7%ED%8B%B0%EC%BC%93&width=728&height=90" width="728" height="90" border="0" marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" frameborder="0"></iframe>');
 	},
 	recall: function (width, height, src) {
 		document.getElementById("ad").outerHTML = '<div id="ad" style="overflow:hidden;margin:auto;width:' + width + 'px;height:' + height + 'px" align="center"><\/div>';
@@ -33,29 +30,13 @@ var adva = {
 		return value ? value[2] : null;
 	},
 	run: function () {
-		max = adva.getcookie('scadst') == null ? 2 : 1;
-		switch (Math.floor(Math.random() * max))
+		switch (Math.floor(Math.random() * 2))
 		{
 			case 0:
-				adva.call728();
+				adva.call518();
 				break;
 			default:
-				adva.call300();
-				break;
-		}
-	},
-	run2: function () {
-		max = adva.getcookie('scadst') == null ? 3 : 2;
-		switch (Math.floor(Math.random() * max))
-		{
-			case 0:
 				adva.call728();
-				break;
-			case 1:
-				adva.call970();
-				break;
-			default:
-				adva.call300();
 				break;
 		}
 	},
